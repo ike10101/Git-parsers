@@ -1,9 +1,10 @@
 ## Description 
 parse_git_index.py and decompresser.py are both used to make git files human-readable 
 
+
 ## parse_git_index.py
 parse_git_index.py is used to parse a .git/index file (in binary) and make it readable 
-#### usage and flags 
+#### Usage and flags 
 ```
 usage: python parse_git_index.py [-h] -i INPUT -o
                           OUTPUT
@@ -21,3 +22,22 @@ options:
                         Path to save the parsed
                         output
 ```
+
+
+## decompresser.py 
+Decompress binary git objects (tree/blob) files especially gotten from .git/index (and have been already downloaded locally to a designated directory) 
+#### Usage and flags 
+```
+usage: decompresser.py [-h] -i INPUT
+
+Decompress binary git tree/blob files.
+
+options:
+  -h, --help            show this help message
+                        and exit
+  -i INPUT, --input INPUT
+                        Directory containing
+                        binary files to
+                        decompress.
+```
+
