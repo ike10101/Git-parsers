@@ -25,8 +25,8 @@ options:
 
 
 ## decompresser.py 
-Decompress binary git object (tree/blob) files especially gotten from .git/index (and have been already downloaded locally to a designated directory).
-It would scan a specified directory for git objects and overwrite any binary git object with the decompressed human-readable content. 
+decompresser.py decompresses binary git object (tree/blob) files especially gotten from .git/index (and have been already downloaded locally to a designated directory).
+It would scan a specified directory/folder for git objects and overwrite any binary git object with the decompressed form of it. 
 #### Usage and flags 
 ```
 usage: decompresser.py [-h] -i INPUT
